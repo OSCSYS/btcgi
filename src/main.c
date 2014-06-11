@@ -94,7 +94,7 @@ int main()
 	if (cmdField[0] == '#')
 		error(400, "Parameter Count Mismatch");
 	
-	printf("Content-Type: application/json; charset=utf-8\nExpires: 0\n\n");
+	printf("Access-Control-Allow-Origin: *\r\nContent-Type: text/html\r\n\r\n");
 	printf("[\"");
 
 	for (i=0; i < n; i++) {
